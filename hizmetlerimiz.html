@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Hizmetlerimiz-HepsiYemek</title>
+	<style>
+	
+	*{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    text-decoration: none;
+}
+	
+body{
+    font-weight:bold;
+	background-color: #030313;
+}
+
+#logo-h{
+	width: 80%;
+	height:75px;
+	color:#FF7600;
+	text-align: center;
+
+}
+
+div label{
+	float: left;
+	width: 15%;
+	font-size:200%;
+	position:absolute;
+	top: 15px;
+	font-family: 'Caveat', cursive;
+	transition: 0.5s;
+}
+	
+div label:hover{
+	font-size:38px;
+	transform: scale(1.1);
+}
+	
+.menu{
+    background-color:#FF9E00;
+    overflow:hidden;
+	position: sticky;
+	top: 0px;
+	z-index: 9999999;
+}
+	
+.menu ul li{
+    float:left;
+	width: 20%;
+}
+	
+.menu ul li a{
+    position: relative;
+    display:block;
+    color:white;
+    font-size:14px;
+    letter-spacing:0.7px;
+    padding:15px 0px;
+	text-align: center;
+}
+	
+.menu ul li a:after{
+    z-index:-1;
+    content:"";
+    position:absolute;
+    width:100%;
+    height:2px;
+    bottom:0px;
+    left:0px;
+    background-color:black;
+    transition:height 500ms;
+	width: 100%;
+}
+	
+.menu ul li a:hover{
+    color:#9CECDE;
+}
+	
+.menu ul li a:hover:after{
+    height: 100%;
+}
+
+.hizmetler{
+	width: 100%;
+	height: auto;	
+}	
+
+#foto1, #foto2, #foto3, #foto4{
+	position: relative;
+	width: 50%;
+	height:400px;
+	background-color: white;
+	margin: 2% 2%;
+	border-radius: 30px;
+	float: left;	
+}	
+
+#aciklama1, #aciklama2, #aciklama3{
+	position: relative;
+	width: 40%;
+	height: auto;
+	float: left;
+	color: white;
+	font-size: 150%;
+	margin: 5% 2% 10% 2%;
+}
+		
+#foto1, #foto2, #foto3 img{
+	object-fit: cover;
+}
+		
+.footer_alani{
+	position: sticky;
+	float: left;
+	bottom: 0px;
+   	width:100%;
+   	height:20px;   
+   	background-color: #02020B;
+	padding: 10px 0px;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+}
+	
+.footer-icon{
+	width:30px;
+	height: 40px;
+	float: right;
+	position:relative;
+	top: -15px;
+	margin: 0px 10px;
+	opacity: 0.5;
+	transition: 0.5s;
+}
+		
+.footer-icon:hover{
+	transform: scale(1.4);
+	opacity: 1;	
+}
+		
+.copyright{
+	float: left;
+}	
+		
+@media screen and (max-width:1024px){
+	.menu{
+		height: 230px;
+		margin: auto;
+		position:relative; 	
+		}
+	.menu ul li{
+		width: 100%;
+		float: none;
+		align-content:center;
+		margin: auto;
+		}
+
+	#foto1 , #foto2 , #foto3{
+		width: 90%;
+		height:300px;
+		background-color: white;
+		border-radius: 30px;
+		float: left;	
+		margin: 8% 4%;
+	}
+	
+	#aciklama1 , #aciklama2 , #aciklama3 {
+		width: 90%;
+		height: auto;
+		float: left;
+		color: white;
+		font-size: 13px;
+		margin: 0% 4% ;
+	}
+}		
+		
+		
+		
+		
+	</style>
+</head>
+
+<body>
+	
+<div id="logo-h">
+	<label>HepsiYemek</label>
+</div>
+		
+<div class="menu">
+    <ul>
+		<li><a href="index.html">Anasayfa</a></li>
+		<li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+		<li><a href="kurumsal.html">Kurumsal</a></li>
+		<li><a href="kariyer.html">Kariyer</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+</div>
+	
+<div class="hizmetler">
+	<div class="foto1">
+		<img id="foto1" src="kokteyl.jpg" alt="kokteyl">
+	</div>
+		<div id="aciklama1">Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır.
+		</div>
+	<div/>	
+	
+	<div class="foto2">
+		<img id="foto2" src="dugun.jpg" alt="dugun">
+	</div>
+		<div id="aciklama2">Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır.
+		</div>
+	<div/>
+	
+	<div class="foto3">
+		<img id="foto3" src="dogumgunu.jpg" alt="dogumgunu">
+	</div>
+		<div id="aciklama3">Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır.
+		</div>
+	<div/>
+</div>	
+
+<div class="footer_alani">
+	<div class="copyright">Copyright ©</div>
+	<div>
+		<a href="https://www.instagram.com/" target="_blank">
+			<img id="instagram" class="footer-icon" src="instagram.svg" alt="instagram_icon"></a>
+		<a href="https://www.twitter.com/" target="_blank">
+			<img id="twitter" class="footer-icon" src="twitter.svg" alt="twitter_icon"></a>
+		<a href="https://www.whatsapp.com/" target="_blank">
+			<img id="whatsapp" class="footer-icon" src="whatsapp.svg" alt="whatsapp_icon"></a>
+		<a href="https://www.facebook.com/" target="_blank">
+			<img id="facebook" class="footer-icon" src="facebook.svg" alt="whatsapp_icon"></a>
+	</div>
+</div>	
+	
+</body>
+</html>

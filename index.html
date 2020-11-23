@@ -1,0 +1,438 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Modak&family=Open+Sans&display=swap" rel="stylesheet">
+<title>HepsiYemek-Catering</title>
+<style>
+*{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    text-decoration: none;
+}
+	
+body{
+    font-weight:bold;
+	background-color: #030313;
+}
+
+	
+#logo-h{
+	width: 75%;
+	height:75px;
+	color:#FF7600;
+	text-align: center;
+
+}
+
+div label{
+	float: left;
+	width: 15%;
+	font-size:200%;
+	position:absolute;
+	top: 15px;
+	font-family: 'Caveat', cursive;
+	transition: 0.5s;
+}
+	
+div label:hover{
+	font-size:38px;
+	transform: scale(1.1);
+}
+	
+.menu{
+    background-color:#FF9E00;
+    overflow:hidden;
+	position: sticky;
+	top: 0px;
+	z-index: 9999999;
+}
+	
+.menu ul li{
+    float:left;
+	width: 20%;
+}
+	
+.menu ul li a{
+    position: relative;
+    display:block;
+    color:white;
+    font-size:14px;
+    letter-spacing:0.7px;
+    padding:15px 0px;
+	text-align: center;
+}
+	
+.menu ul li a:after{
+    z-index:-1;
+    content:"";
+    position:absolute;
+    width:100%;
+    height:2px;
+    bottom:0px;
+    left:0px;
+    background-color:black;
+    transition:height 500ms;
+	width: 100%;
+}
+	
+.menu ul li a:hover{
+    color:#9CECDE;
+}
+	
+.menu ul li a:hover:after{
+    height: 100%;
+}	
+	
+.anagiris{
+	margin: 30px auto;
+	width: 50%;
+	height: 400px;
+	position:relative;
+	background-image: url("login-bg.png");
+	background-repeat: no-repeat;
+	background-size:cover;
+	border-radius: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	transition: 0.5s;
+}
+.anagiris:hover{
+		transform: scale(1.1);
+	}
+.log-h1{
+	font-size: 5vh;
+	color: #5F5FB0;
+	text-align: center;
+}
+	
+.log-hr{
+	width: 95%;
+	margin: 20px 0px;
+	padding: 5px;
+	background:#E1F06C;
+	border: none;
+}
+	
+.log-h3{
+	font-size: 4vh;
+	color: #5F5FB0;
+	margin: 10px;
+}
+	
+.iputalani{
+	width: 90%;
+	padding: 5px;
+	margin: 10px 0px;
+	border: none;
+	border-bottom: 3px solid #5F5FB0;
+	font-size: 20px;
+	background: transparent;
+	outline: none;
+	transition: 0.5s;
+}
+	
+.iputalani:hover{
+	transform: scale(1.1);
+}
+	
+.butonalani{
+	padding: 10px 10px;
+	margin: 10px 0px;
+	font-size: 20px;
+	background: #B0A2EF;
+	color: #fff;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: 0.5s;
+	position: relative;
+	left: 11vh;	
+}
+.butonalani:hover{
+	transform: scale(1.2);	
+}	
+	
+.slayt
+{
+	margin: 50px auto;
+	width: 70%;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 50px;
+	transition: 0.5s;
+}
+	
+.slayt:hover{
+	transform: scale(1.1);
+}	
+.resim1, .resim2, .resim3, .resim4, .resim5{
+	position: absolute;
+	width:100%;
+	height:500px;
+	object-fit: fill;
+}
+	
+.resim1{left: 0;}
+.resim2{left: 50%;}
+.resim3{left: 100%;}
+.resim4{left: 150%;}
+.resim5{left: 200%;}
+
+.slayt  div{
+	object-fit: fill;
+	width: 200%;
+	height: 500px;
+	left:0px;
+	position: absolute;
+	-webkit-animation-duration: 20s;
+	-moz-animation-duration: 20s;
+	-o-animation-duration: 20s;
+	-ms-animation-duration: 20s;
+		animation-duration: 20s;
+	
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-iteration-count:infinite;
+	-o-animation-iteration-count:infinite;
+	-ms-animation-iteration-count:infinite;
+		animation-iteration-count:infinite;
+	
+	-webkit-animation-name: gecisler;
+	-moz-animation-name: gecisler;
+ 	-o-animation-name: gecisler;
+ 	-ms-animation-name: gecisler;
+  		animation-name: gecisler;
+}
+	
+.slayt div  img{
+	opacity: 0.9;
+	filter: alpha(opacity=95);
+	object-fit: fill;
+}
+ 
+.slayt  div  img:hover{
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+ 
+.slayt  div:hover{
+	-webkit-animation-play-state:paused;
+	-moz-animation-play-state:paused;
+	-o-animation-play-state:paused;
+	-ms-animation-play-state:paused;
+		animation-play-state:paused;
+}
+	
+@-webkit-keyframes gecisler
+{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:-100%;}
+  30% {left:-100%;}
+  40% {left:-200%;}
+  50% {left:-200%;}
+  60% {left:-300%;}
+  70% {left:-300%;}
+  80% {left:-400%;}
+  90% {left:-400%;}
+}
+@-moz-keyframes gecisler
+{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:-100%;}
+  30% {left:-100%;}
+  40% {left:-200%;}
+  50% {left:-200%;}
+  60% {left:-300%;}
+  70% {left:-300%;}
+  80% {left:-400%;}
+  90% {left:-400%;}
+}
+@-o-keyframes gecisler
+{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:-100%;}
+  30% {left:-100%;}
+  40% {left:-200%;}
+  50% {left:-200%;}
+  60% {left:-300%;}
+  70% {left:-300%;}
+  80% {left:-400%;}
+  90% {left:-400%;}
+}@-ms-keyframes gecisler
+{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:-100%;}
+  30% {left:-100%;}
+  40% {left:-200%;}
+  50% {left:-200%;}
+  60% {left:-300%;}
+  70% {left:-300%;}
+  80% {left:-400%;}
+  90% {left:-400%;}
+}
+@keyframes gecisler
+{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:-100%;}
+  30% {left:-100%;}
+  40% {left:-200%;}
+  50% {left:-200%;}
+  60% {left:-300%;}
+  70% {left:-300%;}
+  80% {left:-400%;}
+  90% {left:-400%;}
+}	
+	
+.ana-icerik{
+	width: 65%;
+	height: auto;
+	font-size: 150%;
+	font-family: 'Caveat', cursive;
+	color: antiquewhite;
+	text-align: center;
+	position: relative;
+	top: -80px;	
+	margin: auto;
+	transition: 0.5s;
+}
+	
+.ana-icerik:hover{
+	transform: scale(1.1);
+}
+	
+.footer_alani{
+	position: sticky;
+	float: left;
+	bottom: 0px;
+   	width:100%;
+   	height:20px;   
+   	background-color: #02020B;
+	padding: 10px 0px;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+}
+	
+.footer-icon{
+	width:30px;
+	height: 40px;
+	float: right;
+	position:relative;
+	top: -15px;
+	margin: 0px 10px;
+	opacity: 0.5;
+	transition: 0.5s;
+}
+		
+.footer-icon:hover{
+	transform: scale(1.4);
+	opacity: 1;	
+}
+		
+.copyright{
+	float: left;
+}	
+	
+	
+@media screen and (max-width:1100px){
+
+	.menu{
+		height: 230px;
+		margin: auto;
+		position:relative; 	
+	}
+	
+	.menu ul li{
+		width: 100%;
+		float: none;
+		align-content:center;
+		margin: auto;
+	}	
+	
+	.anagiris{
+		width: 80%;
+	}
+	
+	.slayt{
+		width: 80%;
+	}
+	
+	.ana-icerik{
+		width: 70%;
+		
+	}
+	
+</style>
+</head>
+
+<body>
+
+<div id="logo-h">
+	<label><a href="index.html">HepsiYemek</a></label>
+</div>
+		
+<div class="menu">
+    <ul>
+		<li><a href="index.html">Anasayfa</a></li>
+		<li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+		<li><a href="kurumsal.html">Kurumsal</a></li>
+		<li><a href="kariyer.html">Kariyer</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+</div>
+	
+<div class="anagiris">
+	<div id="Giris">
+		<h1 class="log-h1">Giriş Yap</h1>
+		<hr class="log-hr" />
+		<h3 class="log-h3">Hoşgeldiniz</h3>
+		<p><input class="iputalani" type="text" placeholder="Kullanıcı Adı">  </p>
+		<p><input class="iputalani" type="Password" placeholder="Şifre">  </p>
+		<p><button class="butonalani">Devam Et</button></p>
+	</div>	
+</div>
+
+<div class="slayt">
+	<div>
+		<a class="resim1"><img src="photos.jpg" alt="foto"></a>
+		<a class="resim2"><img src="photos2.jpg" alt="foto"></a>
+		<a class="resim3"><img src="photos3.jpg" alt="foto"></a>
+		<a class="resim4"><img src="photos4.jpg" alt="foto"></a>
+		<a class="resim5"><img src="photos5.jpg" alt="foto"></a>
+		<form>
+			<input id="ara" type="search" placeholder="Yemek Ara..">
+		</form>
+	</div>
+</div>	
+	
+<div class="ana-icerik">
+Size ve beklentilerinize özel; davet, toplantı, kokteyl, nişan, düğün, sünnet yemekleri, doğum günü partileri, mezuniyet törenleri, yıldönümü partileri, ödül törenleri ve kutlama partileri organize edilir. Catering hizmeti ile işletmelerin yönetim kadrolarının iş, eğitim ve seminer gibi özel organizasyonları ve toplantıları için en kaliteli sunum, en leziz tatlarla harmanlanır.
+</div>	
+	
+<div class="footer_alani">
+	<div class="copyright">Copyright ©</div>
+	<div>
+		<a href="https://www.instagram.com/" target="_blank">
+			<img id="instagram" class="footer-icon" src="instagram.svg" alt="instagram_icon"></a>
+		<a href="https://www.twitter.com/" target="_blank">
+			<img id="twitter" class="footer-icon" src="twitter.svg" alt="twitter_icon"></a>
+		<a href="https://www.whatsapp.com/" target="_blank">
+			<img id="whatsapp" class="footer-icon" src="whatsapp.svg" alt="whatsapp_icon"></a>
+		<a href="https://www.facebook.com/" target="_blank">
+			<img id="facebook" class="footer-icon" src="facebook.svg" alt="whatsapp_icon"></a>
+	</div>
+</div>	
+	
+</body>
+</html>

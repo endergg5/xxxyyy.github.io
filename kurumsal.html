@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Modak&family=Open+Sans&display=swap" rel="stylesheet">
+<title>Kurumsal-HepsiYemek</title>
+	<style>
+*{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    text-decoration: none;
+}
+		
+body{
+    font-weight:bold;
+	background-color: #030313;
+}
+
+#logo-h{
+	width: 80%;
+	height:75px;
+	color:#FF7600;
+	text-align: center;
+}
+
+div label{
+	float: left;
+	width: 15%;
+	font-size:200%;
+	position:absolute;
+	top: 15px;
+	font-family: 'Caveat', cursive;
+	transition: 0.5s;
+}
+		
+div label:hover{
+	font-size:38px;
+	transform: scale(1.1);
+}
+		
+.menu{
+    background-color:#FF9E00;
+    overflow:hidden;
+	position: sticky;
+	top: 0px;
+	z-index: 9999999;
+}
+		
+.menu ul li{
+    float:left;
+	width: 20%;
+}
+		
+.menu ul li a{
+    position: relative;
+    display:block;
+    color:white;
+    font-size:14px;
+    letter-spacing:0.7px;
+    padding:15px 0px;
+	text-align: center;
+}
+		
+.menu ul li a:after{
+    z-index:-1;
+    content:"";
+    position:absolute;
+    width:100%;
+    height:2px;
+    bottom:0px;
+    left:0px;
+    background-color:black;
+    transition:height 500ms;
+	width: 100%;
+}
+		
+.menu ul li a:hover{
+    color:#9CECDE;
+}
+		
+.menu ul li a:hover:after{
+    height: 100%;
+}
+		
+#icerik{
+	width: 80%;
+	height: auto;
+	margin: 30px auto;
+}
+
+.tarihce , .misyon , .vizyon{
+	width: 80%;
+	height: auto;
+	margin: 40px auto;
+	padding: 30px;
+	border-radius: 40px;
+	border: 1px solid white;
+	-webkit-box-shadow: 2px 1px 3px #cccccc;
+	-moz-box-shadow: 2px 1px 3px #cccccc;
+	-o-box-shadow: 2px 1px 3px #cccccc;
+	-ms-box-shadow: 2px 1px 3px #cccccc;
+		box-shadow: 2px 1px 3px #cccccc;
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	transition: 0.6s;	
+}	
+
+.tarihce:hover , .misyon:hover , .vizyon:hover{
+	transform: scale(1.1);
+	background-color:#545582;
+	color: #060519;
+}
+
+.footer_alani{
+	position:sticky;
+   	bottom:0px;
+   	width:100%;
+   	height:20px;  
+   	background-color: #02020B;
+   	text-align:center;
+	padding: 10px 0px;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+}
+	
+.footer-icon{
+	width:30px;
+	height: 40px;
+	float: right;
+	position:relative;
+	top: -15px;
+	margin: 0px 10px;
+	opacity: 0.5;
+	transition: 0.5s;
+}
+.footer-icon:hover{
+	transform: scale(1.4);
+	opacity: 1;		
+}
+		
+.copyright{
+	float: left;
+}	
+		
+@media screen and (max-width:1024px){
+	
+	.menu{
+		height: 230px;
+		margin: auto;
+		position:relative; 	
+	}
+	
+	.menu ul li{
+		width: 100%;
+		float: none;
+		align-content:center;
+		margin: auto;
+	}
+	
+	#icerik{
+		width: 95%;
+	}
+
+	</style>
+</head>
+
+<body>
+
+<div id="logo-h">
+	<label>HepsiYemek</label>
+</div>
+		
+<div class="menu">
+    <ul>
+		<li><a href="index.html">Anasayfa</a></li>
+		<li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+		<li><a href="kurumsal.html">Kurumsal</a></li>
+		<li><a href="kariyer.html">Kariyer</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+</div>
+
+<div id="icerik">
+	<div class="tarihce"><div style="margin: 10px 0px; text-align: center; font-size: 30px;">Tarihçe</div> 
+		<hr style="width: 50%; margin: 0px auto;"><br>
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+	
+	<div class="misyon"><div style="margin: 10px 0px; text-align: center; font-size: 30px;">Misyon</div>
+		<hr style="width: 50%; margin: 0px auto;"><br>
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>	
+	
+	<div class="vizyon"><div style="margin: 10px 0px; text-align: center; font-size: 30px; ">Vizyon</div>
+		<hr style="width: 50%; margin: 0px auto;"><br>
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>	
+</div>
+	
+<div class="footer_alani">
+	<div class="copyright">Copyright ©</div>
+	<div>
+		<a href="https://www.instagram.com/" target="_blank">
+			<img id="instagram" class="footer-icon" src="instagram.svg" alt="instagram_icon"></a>
+		<a href="https://www.twitter.com/" target="_blank">
+			<img id="twitter" class="footer-icon" src="twitter.svg" alt="twitter_icon"></a>
+		<a href="https://www.whatsapp.com/" target="_blank">
+			<img id="whatsapp" class="footer-icon" src="whatsapp.svg" alt="whatsapp_icon"></a>
+		<a href="https://www.facebook.com/" target="_blank">
+			<img id="facebook" class="footer-icon" src="facebook.svg" alt="whatsapp_icon"></a>
+	</div>
+</div>
+	
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Modak&family=Open+Sans&display=swap" rel="stylesheet">
+<title>İletişim-HepsiYemek</title>
+<style>
+*{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    text-decoration: none;
+}
+		
+body{
+    font-weight:bold;
+	background-color: #030313;
+}
+
+#logo-h{
+	width: 80%;
+	height:75px;
+	color:#FF7600;
+	text-align: center;
+}
+
+div label{
+	float: left;
+	width: 15%;
+	font-size:200%;
+	position:absolute;
+	top: 15px;
+	font-family: 'Caveat', cursive;
+	transition: 0.5s;
+}
+		
+div label:hover{
+	font-size:38px;
+	transform: scale(1.1);
+}
+		
+.menu{
+    background-color:#FF9E00;
+    overflow:hidden;
+	position: sticky;
+	top: 0px;
+	z-index: 9999999;
+}
+		
+.menu ul li{
+    float:left;
+	width: 20%;
+}
+		
+.menu ul li a{
+    position: relative;
+    display:block;
+    color:white;
+    font-size:14px;
+    letter-spacing:0.7px;
+    padding:15px 0px;
+	text-align: center;
+}
+		
+.menu ul li a:after{
+    z-index:-1;
+    content:"";
+    position:absolute;
+    width:100%;
+    height:2px;
+    bottom:0px;
+    left:0px;
+    background-color:black;
+    transition:height 500ms;
+	width: 100%;
+}
+		
+.menu ul li a:hover{
+    color:#9CECDE;
+}
+		
+.menu ul li a:hover:after{
+    height: 100%;
+}	
+
+.iletisim_bilgileri{
+	width: 80%;
+	height: auto;
+	color: white;	
+	border: 1px solid white;
+	border-radius: 80px;
+	padding: 50px;
+	margin: 50px auto;
+	
+}
+
+#adres{
+	width: 20%;
+	height: auto;
+	border: 1px solid white;
+	border-radius: 40%;
+	float: left;
+	margin: 40px 5%;
+	padding: 30px 10px 30px 10px;
+	font-size: 100%;
+	text-align: center;
+	transition: 0.5s;
+	
+	
+}
+
+#adres:hover{
+	transform: scale(1.1);
+	background-color: #6B6A80;
+	color: #0D0D27;
+	}
+	
+#telefon{
+	width: 20%;
+	height: auto;
+	border: 1px solid white;
+	border-radius: 40%;
+	float: left;
+	margin: 40px 5%;
+	padding: 42px 10px 42px 10px;
+	font-size: 100%;
+	text-align: center;
+	transition: 0.5s;
+	
+}
+	
+#telefon:hover{
+	transform: scale(1.1);
+	background-color: #6B6A80;
+	color: #0D0D27;
+	}
+	
+#mail{
+	width: 20%;
+	height: auto;
+	border: 1px solid white;
+	border-radius: 40%;
+	float: left;
+	margin: 40px 5%;
+	padding: 35px 10px 45px 10px;
+	font-size: 100%;
+	text-align: center;
+	transition: 0.5s;
+	word-wrap: break-word;
+}
+	
+#mail:hover{
+	transform: scale(1.1);
+	background-color: #6B6A80;
+	color: #0D0D27;
+}
+
+iframe{
+	width: 100%;
+	height: 400px;
+	border-radius: 100px;
+	align-self: center;
+}
+	
+.footer_alani{
+	position: sticky;
+	float: left;
+	bottom: 0px;
+   	width:100%;
+   	height:20px;   
+   	background-color: #02020B;
+	padding: 10px 0px;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+}
+	
+.footer-icon{
+	width:30px;
+	height: 40px;
+	float: right;
+	position:relative;
+	top: -15px;
+	margin: 0px 10px;
+	opacity: 0.5;
+	transition: 0.5s;
+}
+		
+.footer-icon:hover{
+	transform: scale(1.4);
+	opacity: 1;	
+}
+		
+.copyright{
+	float: left;
+}
+		
+@media screen and (max-width:1100px){
+
+	.menu{
+		height: 230px;
+		margin: auto;
+		position:relative; 	
+	}
+	
+	.menu ul li{
+		width: 100%;
+		float: none;
+		align-content:center;
+		margin: auto;
+	}
+
+	#adres , #telefon , #mail{
+		float: none;
+		width: 50%;
+		margin: 30px auto;
+		border-radius: 100px;
+	}
+	.iletisim_bilgileri{
+		width: 60;
+	}
+	
+</style>
+</head>
+
+<body>
+	
+<div id="logo-h">
+	<label>HepsiYemek</label>
+</div>
+	
+<div class="menu">
+    <ul>
+		<li><a href="index.html">Anasayfa</a></li>
+		<li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+		<li><a href="kurumsal.html">Kurumsal</a></li>
+		<li><a href="kariyer.html">Kariyer</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+</div>
+	
+<div class="iletisim_bilgileri">
+	<div id="adres">
+	Adres: Halide Mahallesi Darülaceze Caddesi No:3A ŞİŞLİ–İSTANBUL
+	</div>
+		
+	<div id="telefon">
+		Telefon: +210 (987) 687 02 32
+	</div>
+	
+	<div id="mail">
+		E-mail: info@hepsiyemek.com
+	</div>
+	
+	<div class="harita">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.2629558482704!2d28.98024601478523!3d41.063244423990554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab71c04eceb6b%3A0x3f1667ab4fad3257!2zSGFsaWRlIEVkaXAgQWTEsXZhciwgRGFyw7xsYWNlemUgQ2QuIDNBLCAzNDM4MiDFnmnFn2xpL8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1606083106403!5m2!1str!2str" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</div>
+	
+</div>
+	
+<div class="footer_alani">
+	<div class="copyright">Copyright ©</div>
+	<div>
+		<a href="https://www.instagram.com/" target="_blank">
+			<img id="instagram" class="footer-icon" src="instagram.svg" alt="instagram_icon"></a>
+		<a href="https://www.twitter.com/" target="_blank">
+			<img id="twitter" class="footer-icon" src="twitter.svg" alt="twitter_icon"></a>
+		<a href="https://www.whatsapp.com/" target="_blank">
+			<img id="whatsapp" class="footer-icon" src="whatsapp.svg" alt="whatsapp_icon"></a>
+		<a href="https://www.facebook.com/" target="_blank">
+			<img id="facebook" class="footer-icon" src="facebook.svg" alt="whatsapp_icon"></a>
+	</div>
+</div>	
+	
+</body>
+</html>
